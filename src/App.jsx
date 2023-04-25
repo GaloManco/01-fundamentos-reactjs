@@ -1,5 +1,5 @@
 
-import { Post } from "./Post";
+import { Post } from './components/Post'
 import { Header } from "./components/Header";
 import { Sidebar } from './components/Sidebar';
 
@@ -13,7 +13,7 @@ import './global.css';
 export function App() {
   return(
     <>
-      
+      {/* Barra do web site */}
       <Header />
 
       <div className={style.wrapper}>
@@ -25,10 +25,8 @@ export function App() {
         {/* Menu principal */}
         <main>
 
-          <Post
-            author="Jonas"
-            content='Eu sou um comentario sobre seu trabalho.' 
-          />
+          <Post />
+          <Post />
 
         </main>
 
